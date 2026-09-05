@@ -78,23 +78,27 @@
       </RouterView>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="container footer-content">
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="container footer-content">
 
-        <div class="footer-logo">
-          <span class="logo-mark">Z</span>
-          <span>Z_Flow</span>
+          <div class="footer-logo">
+            <span class="logo-mark">Z</span>
+            <span>Z_Flow</span>
+          </div>
+
+          <div class="footer-meta">
+            <span>Built with Vue.js</span>
+            <span class="footer-divider">•</span>
+            <span>Codveda Technology Internship</span>
+          </div>
+
+          <div class="footer-copyright">
+            © 2026 Zabihullah Ahmadi. All rights reserved.
+          </div>
+
         </div>
-
-        <div class="footer-meta">
-          <span>Built with Vue.js</span>
-          <span class="footer-divider">•</span>
-          <span>Codveda Technology Internship</span>
-        </div>
-
-      </div>
-    </footer>
+      </footer>
 
   </div>
 </template>
@@ -229,6 +233,27 @@ const closeMenu = () => {
     padding: 13px 15px;
   }
 }
+
+
+.footer-copyright {
+  margin-top: 8px;
+  color: var(--color-text-light);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .footer-developer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footer-copyright {
+    line-height: 1.5;
+  }
+}
+
+
 
 @media (min-width: 701px) {
   .menu-toggle {
