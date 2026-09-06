@@ -1,3 +1,4 @@
+```vue
 <template>
   <section class="api-page">
     <div class="api-container">
@@ -188,6 +189,10 @@
                 :src="repository.owner.avatar_url"
                 :alt="`${repository.owner.login} avatar`"
                 class="avatar"
+                width="42"
+                height="42"
+                loading="lazy"
+                decoding="async"
               />
 
               <div class="repository-owner">
@@ -864,6 +869,9 @@ const formatNumber = (number) => {
 
   box-shadow: var(--shadow-sm);
 
+  content-visibility: auto;
+  contain-intrinsic-size: 0 220px;
+
   transition:
     transform var(--transition-normal),
     border-color var(--transition-normal),
@@ -1262,3 +1270,4 @@ const formatNumber = (number) => {
 }
 
 </style>
+```
