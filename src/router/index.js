@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
-import ApiExplorerView from '../views/ApiExplorerView.vue'
-import NotFoundView from '../views/NotFoundView.vue'
+const HomeView = () => import('../views/HomeView.vue')
+const AboutView = () => import('../views/AboutView.vue')
+const ApiExplorerView = () => import('../views/ApiExplorerView.vue')
+const NotFoundView = () => import('../views/NotFoundView.vue')
 
 const router = createRouter({
   history: createWebHistory(),
