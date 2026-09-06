@@ -1,8 +1,10 @@
+```json
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!robots\\.txt$).*)",
       "destination": "/index.html"
     }
   ]
 }
+```
